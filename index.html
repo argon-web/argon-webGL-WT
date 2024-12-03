@@ -28,12 +28,12 @@
             right: 0;
             top: 0;
             bottom: 0;
-            background: #fffa;
             z-index: 99;
         }
     </style>
 </head>
 <body>
+    <div id="BG"></div>
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <canvas id="video-canvas" style="width:100%; height:100%; object-fit:cover; position:absolute"></canvas>
     <div id="startARDiv" class="ctaDiv">
@@ -42,7 +42,7 @@
         <button id="startARButton" style="display:none" onclick="StartAR()">ALLOW ACCESS</button>
     </div>
     <div id="screenshotDiv" style="display: none;" class="ctaDiv">
-        <div style="position:relative; background-color:white; padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);">
+        <div style="position:relative; background-color:rgba(255, 255, 255, 0); padding:10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);">
             <img id="screenshotImg" src="" alt="screenshot" style="width:80vw; height:80vh">
             <button onclick="document.getElementById('screenshotDiv').style.display = 'none';" style="position:absolute; transform:translateY(-100%); right:0; top:0">Close</button>
         </div>
